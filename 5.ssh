@@ -1,0 +1,19 @@
+
+read -p "Introduce tantos valores como quieras " x
+
+total=0
+
+contador=0
+
+while [ $x -ne 0 ]; do
+	total=$((total + x))
+	contador=$((contador + 1))
+	read -p "Introduce otro valor " x
+done
+
+media=$((total/contador))
+
+echo "La suma es: $total"
+echo "La media es: $media"
+
+
